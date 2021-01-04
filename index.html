@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ezekiel Lavapiez</title>
     <link rel="stylesheet" href="style.css">
+    <script src="parallax.js"></script>
+    <title>Ezekiel's Profile</title>
 </head>
 <body>
-    <header>
-        <h1>Hi! my name is Ezekiel Lavapiez and I am an</h1>
-        <h2 class="typing"></h2>
-    </header>
-    <div id="page1">
-        <div class="menu"> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam obcaecati quos odit, beatae nulla iure ducimus nobis blanditiis earum neque. Modi quasi amet aperiam quis in corrupti dolores dolor inventore.</p></div>
-       
+    <div class="container">
+        <ul id="scene">
+            <li class="layer" data-depth=".3"><img src="Image/textpara.png"></li>
+            <li class="layer" data-depth=".3"><img src="Image/para1.png"></li>
+            <li class="layer" data-depth=".5"><img src="Image/para2.png"></li>
+            <li class="layer" data-depth=".6"><img src="Image/para3.png"></li>
+            <li class="layer" data-depth=".7"><img src="Image/para4.png"></li>
+            <li class="layer" data-depth=".8"><img src="Image/para5.png"></li>
+            <li class="layer" data-depth=".9"><img src="Image/para6.png"></li>
+        </ul>
     </div>
-<script src="app.js"></script>
+    <script>
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+	</script>
 </body>
 </html>

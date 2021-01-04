@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="parallax.js"></script>
     <title>Ezekiel's Profile</title>
 </head>
 <body onload="myFunction()">
+    <div class="sidebar">
+        <a href="#container1">Home</a>
+        <a href="#container2">About</a>
+        <a href="">Edits</a>
+        <a href="">Programs</a>
+        <a href="">Websites</a>
+        <a href="">Contact</a>
+     </div>
     <div id="loading"></div>
     <div id="container1">
-        <ul id="scene">
+        <ul id="scene" data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease-in-out">
             <li class="layer" data-depth=".1"><img src="image/name.png"></li>
             <li class="layer" data-depth=".7"><img src="image/blender.png"></li>
             <li class="layer" data-depth=".3"><img src="image/html.png"></li>
@@ -20,8 +29,12 @@
         </ul>
     </div>
 <div id="container2">
-
-
+<div class="content" data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease-in-out">
+    <h1> My name is Ezekiel Lavapiez</h1>
+    <h2>and I am an</h2>
+    <h1 class="text" data-text="UI/UX DESIGNER, EDITOR, FILM MAKER">UI/UX DESIGNER, EDITOR, FILM MAKER</h1>
+<p>Over the past 3 years, as Programmer and Editor, I’ve worked with companies and up-and-coming startups to successfully help them reach their full potential and attract new customers.</p>
+</div>
 </div>
 
     <script>
@@ -42,5 +55,10 @@
         preloader.style.display = 'none';
     };
 </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="app.js"></script>
 </body>
 </html>

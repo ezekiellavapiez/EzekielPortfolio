@@ -7,21 +7,40 @@
     <script src="parallax.js"></script>
     <title>Ezekiel's Profile</title>
 </head>
-<body>
-    <div class="container">
+<body onload="myFunction()">
+    <div id="loading"></div>
+    <div id="container1">
         <ul id="scene">
-            <li class="layer" data-depth=".3"><img src="Image/textpara.png"></li>
-            <li class="layer" data-depth=".3"><img src="Image/para1.png"></li>
-            <li class="layer" data-depth=".5"><img src="Image/para2.png"></li>
-            <li class="layer" data-depth=".6"><img src="Image/para3.png"></li>
-            <li class="layer" data-depth=".7"><img src="Image/para4.png"></li>
-            <li class="layer" data-depth=".8"><img src="Image/para5.png"></li>
-            <li class="layer" data-depth=".9"><img src="Image/para6.png"></li>
+            <li class="layer" data-depth=".1"><img src="image/name.png"></li>
+            <li class="layer" data-depth=".7"><img src="image/blender.png"></li>
+            <li class="layer" data-depth=".3"><img src="image/html.png"></li>
+            <li class="layer" data-depth="1"><img src="image/java.png"></li>
+            <li class="layer" data-depth="-0.1"><img src="image/ME.png"></li>
+            <li class="layer" data-depth=".5"><img src="image/premiere.png"></li>
         </ul>
     </div>
+<div id="container2">
+
+
+</div>
+
     <script>
 		var scene = document.getElementById('scene');
 		var parallax = new Parallax(scene);
-	</script>
+    </script>
+    
+<script>
+    // $(document).ready(function(){
+        // 	$('div#loading').removeAttr('id');
+    // });
+    var preloader = document.getElementById("loading");
+    // window.addEventListener('load', function(){
+    // 	preloader.style.display = 'none';
+    // 	})
+
+    function myFunction(){
+        preloader.style.display = 'none';
+    };
+</script>
 </body>
 </html>

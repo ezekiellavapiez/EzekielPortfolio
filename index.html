@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="parallax.js"></script>
     <title>Ezekiel's Profile</title>
 </head>
@@ -12,30 +14,60 @@
     <div class="sidebar">
         <a href="#container1">Home</a>
         <a href="#container2">About</a>
-        <a href="">Edits</a>
-        <a href="">Programs</a>
-        <a href="">Websites</a>
-        <a href="">Contact</a>
+        <a href="#container3">Edits</a>
+        <a href="#container4">Programs</a>
+        <a href="#container5">Websites</a>
+        <a href="#container6">Contact</a>
      </div>
     <div id="loading"></div>
     <div id="container1">
         <ul id="scene" data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease-in-out">
-            <li class="layer" data-depth=".1"><img src="image/name.png"></li>
+            <li class="layer" data-depth=".01"><img src="image/name.gif"></li>
             <li class="layer" data-depth=".7"><img src="image/blender.png"></li>
-            <li class="layer" data-depth=".3"><img src="image/html.png"></li>
-            <li class="layer" data-depth="1"><img src="image/java.png"></li>
-            <li class="layer" data-depth="-0.1"><img src="image/ME.png"></li>
-            <li class="layer" data-depth=".5"><img src="image/premiere.png"></li>
+            <li class="layer" data-depth=".2"><img src="image/html.png"></li>
+            <li class="layer" data-depth="1.5"><img src="image/java.png"></li>
+            <li class="layer" data-depth="-0.08"><img src="image/ME.png"></li>
+            <li class="layer" data-depth=".6"><img src="image/premiere.png"></li>
         </ul>
     </div>
 <div id="container2">
+   
 <div class="content" data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease-in-out">
     <h1> My name is Ezekiel Lavapiez</h1>
     <h2>and I am an</h2>
     <h1 class="text" data-text="UI/UX DESIGNER, EDITOR, FILM MAKER">UI/UX DESIGNER, EDITOR, FILM MAKER</h1>
 <p>Over the past 3 years, as Programmer and Editor, I’ve worked with companies and up-and-coming startups to successfully help them reach their full potential and attract new customers.</p>
 </div>
+
 </div>
+<div id="container3" >
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+   <div class="threecontent" data-aos="zoom-out" data-aos-duration="1000" data-aos-easing="ease-in-out"><h1 class="text" data-text="Edits">Edits</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cum, vero nihil doloribus magnam voluptate, reprehenderit totam corporis eaque deleniti sapiente iure. Ducimus facere dolorum, voluptatibus magni deserunt recusandae praesentium!</p></div>
+    <div id="wrapper" data-aos="zoom-out" data-aos-duration="3000" data-aos-easing="ease-in-out">
+        <div class="portfolio-item">
+            <div class="portfolio-thumb">
+                <a href="videos/Sova Compilation 1.mp4"><img src="image/vid1.jpg" alt="" /></a>
+            </div>
+        </div>
+        <div class="portfolio-item2">
+            <div class="portfolio-thumb2">
+                <a href="videos/Maskaragamingtournamentteaser-1.m4v"><img src="image/vid2.jpg" alt="" /></a>
+            </div>
+        </div>
+        <div class="portfolio-item3">
+            <div class="portfolio-thumb3">
+                <a href="videos/2019 Tropang Banal.mp4"><img src="image/vid3.jpg" alt="" /></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="container4"><h1>Programs</h1></div>
+<div id="container5"><h1>Websites</h1></div>
+<div id="container6"><h1>Contact</h1></div>
+
+
 
     <script>
 		var scene = document.getElementById('scene');
@@ -60,5 +92,7 @@
     AOS.init();
   </script>
   <script src="app.js"></script>
+<script src="imagehover.js"></script>
+  
 </body>
 </html>

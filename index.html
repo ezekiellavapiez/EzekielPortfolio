@@ -17,6 +17,9 @@
 
         <!-- Slider Plugin -->
         <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
+        <script src="https://raw.githubusercontent.com/JohnBlazek/codepen-resources/master/3d-carousel/js/libs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="parallax.js"></script>
     <title>Ezekiel's Profile</title>
 </head>
@@ -29,7 +32,7 @@
         <a href="#container1">Home</a>
         <a href="#container2">About</a>
         <a href="#container3">Edits</a>
-        <a href="#container4">Programs</a>
+        <a href="#slider">Programs</a>
         <a href="#container5">Websites</a>
         <a href="#container6">Contact</a>
      </div>
@@ -78,17 +81,21 @@
         </div>
     </div>
 </div>
-<div id="container4">
-    <div>
-        <div class="slider">
-            <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
-            <nav>
-                <a href="#" class="main-nav prev" data-nav="previous">Prev <span></span></a>
-                <a href="#" class="main-nav next" data-nav="next">Next <span></span></a>
-            </nav>
-        </div>
-    </div>
-</div>
+
+    <section id="slider">
+        <h1>Programs</h1>
+        <input type="radio" name="slider" id="s1">
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3" checked>
+        <input type="radio" name="slider" id="s4">
+        <input type="radio" name="slider" id="s5">
+        <label for="s1" id="slide1"></label>
+        <label for="s2" id="slide2"></label>
+        <label for="s3" id="slide3"></label>
+        <label for="s4" id="slide4"></label>
+        <label for="s5" id="slide5"></label>
+      </section>
+
 <div id="container5"><h1>Websites</h1></div>
 <div id="container6"><h1>Contact</h1></div>
 
@@ -192,5 +199,6 @@
     progress();
     $(document).on("scroll", progress);
 </script>
+
 </body>
 </html>

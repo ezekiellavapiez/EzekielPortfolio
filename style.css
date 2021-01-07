@@ -475,85 +475,96 @@ body {
   text-shadow: -2px 0 blue;
   animation: glitch-2 2s linear infinite reverse;
 }
-#container4 {
+
+[type="radio"] {
+  display: none;
+}
+#slider h1 {
   color: white;
-  background: black;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: "GoodTimes";
+  text-align: center;
+  padding: 3%;
 }
-#container4 div {
+#slider {
+  height: 35vw;
   position: relative;
-  width: 100%;
-  height: 100vh;
-  scroll-behavior: smooth;
-}
-#container4 .slider {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  text-transform: uppercase !important;
+  perspective: 1000px;
+  transform-style: preserve-3d;
 }
 
-@media screen and (min-width: 53em) {
-  .slider {
-    height: 100vh;
-  }
-}
-
-#container4 .rgbKineticSlider {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
+#slider label {
+  margin: auto;
+  width: 60%;
   height: 100%;
-  font-family: "MontLight";
-}
-
-#container4 canvas {
+  border-radius: 4px;
   position: absolute;
-  display: block;
-  top: 0;
   left: 0;
+  right: 0;
+  cursor: pointer;
+  transition: transform 0.4s ease;
 }
 
-#container4 nav a {
-  border-radius: 50px;
-  text-decoration: none;
-  position: absolute;
-  top: 46vh;
-  z-index: 1;
-  padding: 20px;
-  transition: 0.3s;
-  background: black;
-  color: white;
-  transition: 0.2s;
-}
-#container4 nav a:hover {
-  background: white;
-  color: black;
-  transition: 0.2s;
-}
-#container4 nav a.next {
-  font-family: "MontLight";
-  right: 10vw;
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(-30%, 0, -200px);
 }
 
-#container4 nav a.prev {
-  margin-left: 10%;
-  font-family: "MontLight";
-  left: 10vw;
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(-15%, 0, -100px);
 }
 
-@media screen and (max-width: 53em) {
-  nav a {
-    top: auto;
-    bottom: 3rem;
-  }
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
+  transform: translate3d(0, 0, 0);
 }
+
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  transform: translate3d(15%, 0, -100px);
+}
+
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  transform: translate3d(30%, 0, -200px);
+}
+
+#slide1 {
+  background: #00bcd4;
+}
+#slide2 {
+  background: #4caf50;
+}
+#slide3 {
+  background: #cddc39;
+}
+#slide4 {
+  background: #ffc107;
+}
+#slide5 {
+  background: #ff5722;
+}
+
 #container5 {
   color: white;
   background: black;

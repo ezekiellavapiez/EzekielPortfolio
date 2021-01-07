@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <!-- TweenMax -->
+        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/TweenMax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/imagesLoaded.pkgd.min.js"></script>
+
+        <!-- Pixi JS -->
+        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/libs/pixi-filters.min.js"></script>
+
+        <!-- Slider Plugin -->
+        <script src="https://cdn.jsdelivr.net/gh/hmongouachon/rgbKineticSlider/js/rgbKineticSlider.js"></script>
     <script src="parallax.js"></script>
     <title>Ezekiel's Profile</title>
 </head>
@@ -68,7 +78,17 @@
         </div>
     </div>
 </div>
-<div id="container4"><h1>Programs</h1></div>
+<div id="container4">
+    <div>
+        <div class="slider">
+            <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+            <nav>
+                <a href="#" class="main-nav prev" data-nav="previous">Prev <span></span></a>
+                <a href="#" class="main-nav next" data-nav="next">Next <span></span></a>
+            </nav>
+        </div>
+    </div>
+</div>
 <div id="container5"><h1>Websites</h1></div>
 <div id="container6"><h1>Contact</h1></div>
 
@@ -97,6 +117,7 @@
     AOS.init();
   </script>
   <script src="app.js"></script>
+  <script src="iamgeliquid.js"></script>
 <script src="imagehover.js"></script>
 <script>
     const body = document.body,

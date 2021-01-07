@@ -491,6 +491,69 @@ body {
   height: 100vh;
   scroll-behavior: smooth;
 }
+#container4 .slider {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-transform: uppercase !important;
+}
+
+@media screen and (min-width: 53em) {
+  .slider {
+    height: 100vh;
+  }
+}
+
+#container4 .rgbKineticSlider {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: "MontLight";
+}
+
+#container4 canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+#container4 nav a {
+  border-radius: 50px;
+  text-decoration: none;
+  position: absolute;
+  top: 46vh;
+  z-index: 1;
+  padding: 20px;
+  transition: 0.3s;
+  background: black;
+  color: white;
+  transition: 0.2s;
+}
+#container4 nav a:hover {
+  background: white;
+  color: black;
+  transition: 0.2s;
+}
+#container4 nav a.next {
+  font-family: "MontLight";
+  right: 10vw;
+}
+
+#container4 nav a.prev {
+  margin-left: 10%;
+  font-family: "MontLight";
+  left: 10vw;
+}
+
+@media screen and (max-width: 53em) {
+  nav a {
+    top: auto;
+    bottom: 3rem;
+  }
+}
 #container5 {
   color: white;
   background: black;

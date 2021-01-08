@@ -73,3 +73,78 @@ var cursor = $(".cursor"),
                 cursor.removeClass("active");
                 follower.removeClass("active");
             });
+            //////////////
+            $(document).on("mousemove", function(e) {
+                mouseX = e.pageX;
+                mouseY = e.pageY;
+            });
+
+            $("#slide1").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $("#slide1").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
+             //////////////
+             $(document).on("mousemove", function(e) {
+                mouseX = e.pageX;
+                mouseY = e.pageY;
+            });
+
+            $("#slide2").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $("#slide2").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
+             //////////////
+             $(document).on("mousemove", function(e) {
+                mouseX = e.pageX;
+                mouseY = e.pageY;
+            });
+
+            $("#slide3").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $("#slide3").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
+             //////////////
+             $(document).on("mousemove", function(e) {
+                mouseX = e.pageX;
+                mouseY = e.pageY;
+            });
+
+            $("#slide4").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $("#slide4").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });
+             //////////////
+             $(document).on("mousemove", function(e) {
+                mouseX = e.pageX;
+                mouseY = e.pageY;
+            });
+
+            $("#slide4").on("mouseenter", function() {
+                cursor.addClass("active");
+                follower.addClass("active");
+            });
+
+            $("#slide4").on("mouseleave", function() {
+                cursor.removeClass("active");
+                follower.removeClass("active");
+            });

@@ -511,6 +511,7 @@ body {
 #s5:checked ~ #slide3 {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
   transform: translate3d(-30%, 0, -200px);
+  opacity: 1;
 }
 
 #s1:checked ~ #slide5,
@@ -520,6 +521,7 @@ body {
 #s5:checked ~ #slide4 {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   transform: translate3d(-15%, 0, -100px);
+  opacity: 1;
 }
 
 #s1:checked ~ #slide1,
@@ -529,6 +531,7 @@ body {
 #s5:checked ~ #slide5 {
   box-shadow: 0 13px 25px 0 rgba(0, 0, 0, 0.3), 0 11px 7px 0 rgba(0, 0, 0, 0.19);
   transform: translate3d(0, 0, 0);
+  opacity: 1;
 }
 
 #s1:checked ~ #slide2,
@@ -538,6 +541,7 @@ body {
 #s5:checked ~ #slide1 {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.2);
   transform: translate3d(15%, 0, -100px);
+  opacity: 1;
 }
 
 #s1:checked ~ #slide3,
@@ -547,22 +551,33 @@ body {
 #s5:checked ~ #slide2 {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
   transform: translate3d(30%, 0, -200px);
+  opacity: 1;
 }
 
 #slide1 {
-  background: #00bcd4;
+  background-image: url("image/sys1.jpg");
+  background-size: cover;
+  opacity: 0.5;
 }
 #slide2 {
-  background: #4caf50;
+  background-image: url("image/sys2.jpg");
+  background-size: cover;
+  opacity: 0.5;
 }
 #slide3 {
-  background: #cddc39;
+  background-image: url("image/sys3.jpg");
+  background-size: cover;
+  opacity: 0.5;
 }
 #slide4 {
-  background: #ffc107;
+  background-image: url("image/sys5.jpg");
+  background-size: cover;
+  opacity: 0.5;
 }
 #slide5 {
-  background: #ff5722;
+  background-image: url("image/sys6.jpg");
+  background-size: cover;
+  opacity: 0.5;
 }
 
 #container5 {

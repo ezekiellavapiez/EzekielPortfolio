@@ -139,12 +139,12 @@ var cursor = $(".cursor"),
                 mouseY = e.pageY;
             });
 
-            $("#slide4").on("mouseenter", function() {
+            $("#slide5").on("mouseenter", function() {
                 cursor.addClass("active");
                 follower.addClass("active");
             });
 
-            $("#slide4").on("mouseleave", function() {
+            $("#slide5").on("mouseleave", function() {
                 cursor.removeClass("active");
                 follower.removeClass("active");
             });

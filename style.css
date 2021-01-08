@@ -475,15 +475,16 @@ body {
   text-shadow: -2px 0 blue;
   animation: glitch-2 2s linear infinite reverse;
 }
+#container4 {
+  background-image: url("image/backgroundpage4.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding-bottom: 50px;
+}
 
 [type="radio"] {
   display: none;
-}
-#slider h1 {
-  color: white;
-  font-family: "GoodTimes";
-  text-align: center;
-  padding: 3%;
 }
 #slider {
   height: 35vw;
